@@ -4,7 +4,7 @@ const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
-
+var engine, world;
 
 function setup() {
 	createCanvas(1000, 700);
@@ -33,7 +33,7 @@ function draw() {
     dustbin3.display();
 
     if (keyCode === UP_ARROW) {
-        Matter.Body.applyForce(ball.body, ball.body.position, {x: 5, y: -20});
+        Matter.Body.applyForce(ball.body, ball.body.position, {x: 85, y: -85});
     }
 
     drawSprites();
