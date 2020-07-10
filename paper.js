@@ -15,7 +15,7 @@ class Paper {
         var pos = this.body.position;
         push();
         translate(pos.x, pos.y);
-        ellipseMode(CENTER);
+        ellipseMode(RADIUS);
         fill("purple");
         circle(0, 0, 50);
         pop();
