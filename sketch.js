@@ -3,14 +3,13 @@ var dustbin1, dustbin2, dustbin3;
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
-const Body = Matter.Body;
 var engine, world;
 
 function setup() {
-	createCanvas(1000, 700);
+    createCanvas(1000, 700);
 
-	engine = Engine.create();
-	world = engine.world;
+    engine = Engine.create();
+    world = engine.world;
 
     ground = Bodies.rectangle(width / 2, 650, width, 10, { isStatic: true });
     World.add(world, ground);
